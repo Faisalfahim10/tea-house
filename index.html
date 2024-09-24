@@ -20,10 +20,13 @@
         tailwind.config = {
             theme: {
                 extend: {
+                    backgroundImage: {
+        'custom-gradient': 'linear-gradient(270deg, #FF000019 0%, #FF893819 100%)',
+      },
                     colors: {
                         clifford: '#da373d',
-                        customRed: '#FF0000',
-                        customOrange: '#FF8938',
+                        'gradient-start': '#FF8938',
+                        'gradient-end': '#F00',
                     },
 
                 }
@@ -39,8 +42,8 @@
 
 <body class="font-manrope">
     <header class="container mx-auto">
-        <div class="hero">
-            <div class="hero-content flex-col lg:flex-row">
+        <div class="my-20 p-4 lg:mx-16">
+            <div class="flex justify-between items-center flex-col lg:flex-row">
 
                 <div>
                     <h1 class="text-7xl font-extrabold">It's good <br>
@@ -48,10 +51,12 @@
                     <p class="py-6">
                         Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
                     </p>
-                    <button class="btn btn-primary">Explore More</button>
+                    <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">Explore More <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none"></svg>
+                        <path d="M4.5 19.7788L19.5 4.77881M19.5 4.77881H8.25M19.5 4.77881V16.0288" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg></span></button>
                 </div>
                 <div>
-                    <img src="images/banner.png" class="max-w-sm rounded-lg" />
+                    <img src="images/banner.png" class="rounded-lg" />
                     <!-- ratings badge -->
                     <div class="flex -mt-16 gap-4 drop-shadow-lg bg-white p-5 w-60">
                         <i class="fa-solid fa-star text-3xl text-amber-400"></i>
@@ -72,7 +77,7 @@
             <p class="lg:max-w-3xl mb-10 mx-auto">There are many variations of passages of Lorem Ipsum available, but
                 the majority have suffered alteration in some form, by injected humour, or randomised words which don't
                 look even slightly believable.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 m-6 space-y-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 m-6">
                 <!-- 1st product -->
                 <div class="card bg-gray-100 p-8 shadow-xl">
                     <figure class="px-10 pt-12">
@@ -152,7 +157,7 @@
         </section>
         <!-- super clients section -->
         <section
-            class="my-24 lg:mx-16 p-6 lg:px-20 flex flex-col lg:flex-row rounded-xl  bg-gradient-to-r from-[#FF8938] to-[#F00] py-24 gap-12">
+            class="my-24 lg:mx-16 mx-4 px-6 lg:px-20 flex flex-col lg:flex-row rounded-xl  bg-gradient-to-r from-gradient-start to-gradient-end py-24 gap-12">
             <div class="flex lg:pr-28 items-center">
                 <div class="space-y-5">
                     <h2 class="text-5xl font-extrabold text-white">Meet Our Super
@@ -213,78 +218,66 @@
         <!-- News and Events -->
         <section class="my-32 text-center">
             <h3 class="text-5xl font-extrabold p-5">News & Events</h3>
-            <p class="max-w-3xl mx-auto">There are many variations of passages of Lorem Ipsum available, but the
-                majority have suffered alteration in some form, by injected humour, or randomised words which don't look
-                even slightly believable. </p>
-
-            <!-- News section -->
-
-            <div class="mt-12 gap-12 mx-4 lg:mx-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <p class="max-w-3xl mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+        
+            <div class="mt-12 gap-6 p-8 lg:mx-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <!-- 1st news -->
-                <div class="card bg-base-100 w-96 shadow-xl text-left">
+                <div class="card p-5 bg-base-100 w-full max-w-xs lg:max-w-md shadow-xl text-lef">
                     <figure>
-                      <img
-                        src="images/news-1.png"
-                        alt="Shoes" />
+                        <img class="w-full h-auto" src="images/news-1.png" alt="News 1" />
                     </figure>
                     <div class="card-body">
-                        <p class="">Feb 05, 2027</p>
-                      <h2 class="text-xl font-extrabold">
-                        Collecting 8 points for <br> discount
-                      </h2>
-                      <p>There are many variations of passages of Lorem Ipsum available.</p>
-                      <div class="">
-                        <button class="btn btn-primary">Learn More</button>
-                      </div>
+                        <p>Feb 05, 2027</p>
+                        <h2 class="text-xl font-extrabold">
+                            Collecting 8 points for <br> discount
+                        </h2>
+                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                        <div>
+                            <button class="btn btn-primary">Learn More</button>
+                        </div>
                     </div>
-                  </div>
+                </div>
+        
                 <!-- 2nd news -->
-                <div class="card bg-base-100 w-96 shadow-xl text-left">
+                <div class="card p-5 bg-base-100 w-full max-w-xs lg:max-w-md shadow-xl text-left">
                     <figure>
-                      <img
-                        src="images/news-2.png"
-                        alt="Shoes" />
+                        <img class="w-full h-auto" src="images/news-2.png" alt="News 2" />
                     </figure>
                     <div class="card-body">
-                        <p class="">Feb 05, 2027</p>
-                      <h2 class="text-xl font-extrabold">
-                        Collecting 8 points for <br> discount
-                      </h2>
-                      <p>There are many variations of passages of Lorem Ipsum available.</p>
-                      <div class="">
-                        <button class="btn btn-primary">Learn More</button>
-                      </div>
+                        <p>Feb 05, 2027</p>
+                        <h2 class="text-xl font-extrabold">
+                            Collecting 8 points for <br> discount
+                        </h2>
+                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                        <div>
+                            <button class="btn btn-primary">Learn More</button>
+                        </div>
                     </div>
-                  </div>
+                </div>
+        
                 <!-- 3rd news -->
-                <div class="card bg-base-100 w-96 shadow-xl text-left">
+                <div class="card p-5 bg-base-100 w-full max-w-xs lg:max-w-md shadow-xl text-left">
                     <figure>
-                      <img
-                        src="images/news-3.png"
-                        alt="Shoes" />
+                        <img class="w-full h-auto" src="images/news-3.png" alt="News 3" />
                     </figure>
                     <div class="card-body">
-                        <p class="">Feb 05, 2027</p>
-                      <h2 class="text-xl font-extrabold">
-                        Collecting 8 points for <br> discount
-                      </h2>
-                      <p>There are many variations of passages of Lorem Ipsum available.</p>
-                      <div class="">
-                        <button class="btn btn-primary">Learn More</button>
-                      </div>
+                        <p>Feb 05, 2027</p>
+                        <h2 class="text-xl font-extrabold">
+                            Collecting 8 points for <br> discount
+                        </h2>
+                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                        <div>
+                            <button class="btn btn-primary">Learn More</button>
+                        </div>
                     </div>
-                  </div>
-                      </div>
-                    </div>
-                  </div>
+                </div>
             </div>
         </section>
+        
 
     </main>
 
-    <footer>
-
-    </footer>
+   
 </body>
 
 </html>
