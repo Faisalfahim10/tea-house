@@ -222,7 +222,7 @@
         
             <div class="mt-12 gap-6 p-8 lg:mx-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <!-- 1st news -->
-                <div class="card p-5 bg-base-100 w-full max-w-xs lg:max-w-md shadow-xl text-lef">
+                <div class="card p-5 bg-base-100 w-full max-w-xs lg:max-w-md shadow-xl text-left">
                     <figure>
                         <img class="w-full h-auto" src="images/news-1.png" alt="News 1" />
                     </figure>
@@ -272,10 +272,65 @@
                     </div>
                 </div>
             </div>
-        </section>
-        
-
+        </section>    
     </main>
+    <!-- footer -->
+    <footer class="px-4 mx-2 lg:px-48 py-10 text-base-content bg-custom-gradient">
+        <nav class="flex flex-col lg:flex-row justify-between items-center my-10">
+            <img class="w-16 h-16 mb-4 lg:mb-0" src="images/cup.png" alt="Logo">
+            <div class="text-center lg:text-left">
+                <span class="block lg:inline px-0 lg:px-10 pt-5 pb-5">Ready to get started?</span>
+                <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">Get Started</button>
+            </div>
+        </nav>
+        
+        <nav class="footer grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <nav>
+                <h6 class="font-bold">Quick Links</h6>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+                <h6 class="font-bold">Our Service</h6>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+                <h6 class="font-bold">Legal</h6>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </nav>
+            <div>
+                <form>
+                    <h6 class="font-bold">Newsletter</h6>
+                    <fieldset class="form-control w-full md:w-80">
+                        <label class="label">
+                            <span class="label-text">Enter your email address</span>
+                        </label>
+                        <div class="flex flex-col md:flex-row gap-2">
+                            <input
+                                type="text"
+                                placeholder="enter your email"
+                                class="py-4 w-full bg-transparent border-b-2 border-black outline-none" />
+                            <button class="btn rounded-full bg-gradient-to-r from-gradient-start to-gradient-end text-white">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </nav>
+        
+        <aside class="mt-10 text-center">
+            <p class="text-sm">Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+        </aside>
+    </footer>
+    
 
    
 </body>
